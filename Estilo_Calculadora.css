@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(to left, rgb(255, 115, 0), rgb(2, 2, 202));
+}
+.resultado{
+    color: rgb(228, 33, 65);
+    width: 60px;
+    height: 200px;
+    
+}
+button{
+    color: rgb(53, 157, 243);
+    background-color: rgb(34,32,32);
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    margin: 3;
+    border: none;
+}
+.visor{
+    border-radius: 10px;
+    border-color: black;
+    width: 265px;
+    height: 60px;
+    margin: 7;
+    background-color: honeydew;
+}
+.calculadora{
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgb(34, 32, 32);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    
+}
+.apagar{
+    color: rgb(228, 33, 65);
+}
+.somar{
+    color: rgb(228, 33, 65);
+}
+.subtrair{
+    color: rgb(228, 33, 65);
+}
+.dividir{
+    color: rgb(228, 33, 65);
+}
+.multiplicar{
+    color: rgb(228, 33, 65);
+}
+.potencia{
+    color: rgb(228, 33, 65);
+}
