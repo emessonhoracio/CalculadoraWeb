@@ -5,41 +5,51 @@
         <link rel="stylesheet" href="Estilo_Calculadora.css">
     </head>
     <body>
-        <div class="calculadora" >
+        <header>
+            <h1><strong>ATENÇÃO, FAÇA UMA OPERAÇÃO POR VEZ</strong></h1>
+        </header>
+        <section class="calculadora" >
             <table>
-                <tr>
-                    <input class="visor" type="number" disabled/>
-                </tr>
-                <tr>
-                    <td><button class="apagar">C</button></td>
-                    <td><button class="somar">+</button></td>
-                    <td><button class="subtrair">-</button></td>
-                    <td><button class="multiplicar">x</button></td>
-                </tr>
-                <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
-                    <td><button class="dividir">/</button></td>
-                </tr>
-                <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
-                    <td rowspan="5"><button class="resultado">=</button></td>
-                </tr>
-                <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
-                </tr>
-                <tr>
-                    <td><button>0</button></td>
-                    <td><button>.</button></td>
-                    <td><button class="potencia">^</button></td>
-                </tr>
+                <div>
+                    <tr>
+                        <textarea id='visor' disabled></textarea>     
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><button class="apagar" onclick='apagar()'>C</button></td>
+                        <td><button class="somar" onclick="operacao('somar')">+</button></td>
+                        <td><button class="subtrair" onclick="operacao('subtrair')">-</button></td>
+                        <td><button class="multiplicar" onclick="operacao('multiplicar')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id='n1' onclick="escreverTel('n1')">1</button></td>
+                        <td><button id='n2' onclick="escreverTel('n2')">2</button></td>
+                        <td><button id='n3' onclick="escreverTel('n3')">3</button></td>
+                        <td><button class="dividir" onclick="operacao('dividir')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id='n4' onclick="escreverTel('n4')">4</button></td>
+                        <td><button id='n5' onclick="escreverTel('n5')">5</button></td>
+                        <td><button id='n6' onclick="escreverTel('n6')">6</button></td>
+                        <td rowspan="5"><button class="resultado" onclick="resultado()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id='n7' onclick="escreverTel('n7')">7</button></td>
+                        <td><button id='n8' onclick="escreverTel('n8')">8</button></td>
+                        <td><button id='n9' onclick="escreverTel('n9')">9</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id='n0' onclick="escreverTel('n0')">0</button></td>
+                        <td><button id='ponto' onclick="escreverTel('ponto')">.</button></td>
+                        <td><button class="potencia" onclick="operacao('potencia')">^</button></td>
+                    </tr>
+                </div>
             </table>
-            
-        </div>
+        </section>
+        <footer> 
+            <p1>&copy; Emesson Horácio</p1>
+        </footer>
+        <script src = 'script.js'></script>
     </body>
 </html>
